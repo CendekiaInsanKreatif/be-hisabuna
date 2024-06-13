@@ -1,0 +1,24 @@
+COA
+nomor_akun
+nama_akun
+level (level diambil dari nomor akun)
+saldo_normal
+laporan_arus_kas
+
+jurnal
+no_urut
+nomor_transaksi
+tanggal
+keterangan
+lampiran (optional)[jurnal kas masuk,keluar,umum]
+
+jurnal detail
+kode
+nama_akun
+debit(bertambah)
+kredit(berkurang)
+keterangan
+selisih
+
+jurnal_detail:fitur
+template excel
