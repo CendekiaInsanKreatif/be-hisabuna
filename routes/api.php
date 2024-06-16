@@ -196,5 +196,10 @@ Route::get('/clear', function() {
     ]);
  });
 
+ //coa baru
+Route::resource('coa', CoaController::class);
+Route::get('/filterLevel1_3',[CoaController::class,'filterLevel1_3'])->name('/filterLevel1_3');
+Route::get('/filterLevel4_5 ',[CoaController::class,'filterLevel4_5'])->name('/filterLevel4_5');
+
 
 
