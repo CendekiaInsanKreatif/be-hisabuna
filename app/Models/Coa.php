@@ -1,19 +1,25 @@
 <?php
 
-// namespace App\Models;
+namespace App\Models;
 
-// use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 
-// class Coa extends Model
-// {
-//     protected $table = 'coa';
-
-//     protected $fillable = [
-//         'akun_no',
-//         'akun_nama',
-//         'saldo_awal_debit',
-//         'saldo_awal_credit',
-//         'arus_kas',
-//         'anggaran',
-//     ];
-// }
+class Coa extends Model
+{
+    use HasFactory;
+    protected $fillable = [
+        "id",
+        "nomor_akun",
+        "nama_akun",
+        "level",
+        "saldo_normal",
+        "created_at",
+        "created_by",
+        "updated_at",
+        "updated_by",
+        "is_deleted",
+        "deleted_at",
+        "deleted_by",
+    ];
+}
